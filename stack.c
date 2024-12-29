@@ -12,6 +12,18 @@ int top = -1;
 void Push(int x){
     Stack[++top] = x;
 }
+
+void IsFull(){
+
+    if(top == MAX_SIZE - 1){
+        printf("Stack is full\n");
+    }
+    else{
+        printf("Stack has space\n ");
+    }
+
+}
+
 void display_Stack(){
     int i;
     printf("Stack: ");
@@ -31,6 +43,7 @@ int main(){
     Push(85);
     Push(32);
     display_Stack();
+     IsFull();
     
 
 
