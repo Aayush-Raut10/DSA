@@ -1,6 +1,6 @@
 /*
     This program demonstrates the sum of elements of an array
-    (Lets suppose we need to sum up marks of 5 subjects of a student using by using array sum)
+    (Lets suppose we need to sum up marks of 5 subjects of a student by using array sum)
     
 */
 #include<stdio.h>
