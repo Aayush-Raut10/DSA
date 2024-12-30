@@ -1,6 +1,6 @@
 /*
     This program demonstrates the sum of elements of an array
-    (Lets suppose we need to sum up marks of 5 subjects of a student)
+    (Lets suppose we need to sum up marks of 5 subjects of a student using by using array sum)
     
 */
 #include<stdio.h>
@@ -14,7 +14,7 @@ int main(){
     int marks[SIZE]; //Array for storing marks of 5 subject
 
 
-    //Taking marks of each 5 subjects
+    //Taking marks of each 5 subjects as input from user
     for(i=0; i<SIZE; i++){
         printf("Enter the marks of subject %d = ",i+1);
         scanf("%d",&marks[i]);
