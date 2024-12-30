@@ -1,5 +1,5 @@
 /*
-    This C program to read elements of array from user
+     C program to read elements of array from user
 */
 
 #include<stdio.h>
