@@ -13,17 +13,22 @@ void Push(int x){
     Stack[++top] = x;
 }
 
+void Pop(){
+    printf("Poped element is %d\n",Stack[top]);
+    top = top - 1;
+}
+
+
 void IsFull(){
 
     if(top == MAX_SIZE - 1){
         printf("Stack is full\n");
     }
     else{
-        printf("Stack has space\n ");
+        printf("Stack has space\n");
     }
 
 }
-
 void display_Stack(){
     int i;
     printf("Stack: ");
@@ -35,15 +40,30 @@ void display_Stack(){
 }
 
 int main(){
+
     Push(12);
     Push(2);
     Push(3);
+
     display_Stack();
+
     Push(1);
     Push(85);
     Push(32);
+
     display_Stack();
-     IsFull();
+
+    IsFull();
+
+    Pop();
+
+    display_Stack();
+
+    Pop();
+    
+    display_Stack();
+
+    
     
 
 
