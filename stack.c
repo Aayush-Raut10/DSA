@@ -29,6 +29,20 @@ void IsFull(){
     }
 
 }
+
+void IsEmpty(){
+
+    if(top == -1){
+        printf("Stack is empty");
+    }
+    else{
+        printf("Stack is not empty");
+    }
+
+    printf("\n");
+    
+}
+
 void display_Stack(){
     int i;
     printf("Stack: ");
@@ -62,6 +76,8 @@ int main(){
     Pop();
     
     display_Stack();
+
+    IsEmpty();
 
     
     
