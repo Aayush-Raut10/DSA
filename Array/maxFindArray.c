@@ -29,7 +29,7 @@ int main(){
     }
 
     
-    printf("\nLargest element of array = %d\n",largest);
+    printf("\nLargest element of an array = %d\n",largest);
 
 
 
