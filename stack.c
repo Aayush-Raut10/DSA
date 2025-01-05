@@ -11,6 +11,7 @@ int top = -1;
 
 void Push(int x){
     Stack[++top] = x;
+    
 }
 
 void Pop(){
@@ -43,6 +44,7 @@ void IsEmpty(){
     
 }
 
+
 void display_Stack(){
     int i;
     printf("Stack: ");
@@ -55,32 +57,54 @@ void display_Stack(){
 
 int main(){
 
-    Push(12);
-    Push(2);
-    Push(3);
+    int choice;
 
-    display_Stack();
+    do{
+        printf("\nYou can perform following operation on the stack:\n");
+        printf("1. Push into stack\n");
+        printf("2. Pop from stack\n");
+        printf("3. Display the elements of stack\n");
+        printf("4. IsEmpty\n");
+        printf("5. IsFull\n");
+        printf("6. Exit\n");
 
-    Push(1);
-    Push(85);
-    Push(32);
+        printf("Enter your choice: ");
+        scanf("%d",&choice);
 
-    display_Stack();
+        int a;
 
-    IsFull();
+        switch(choice){
 
-    Pop();
+            case 1:
+                   
+                    printf("Enter the elements that you want to push on the stack: ");
+                    scanf("%d",&a);
+                    Push(a);
+                    break;
+            
+            case 2: 
+                    Pop();
+                    break;
 
-    display_Stack();
+            case 3: 
+                    display_Stack();
+                    break;
+            
+            case 4:
+                    IsEmpty();
+                    break;
 
-    Pop();
-    
-    display_Stack();
 
-    IsEmpty();
+            case 5:
+                    IsFull();
+                    break;
 
-    
-    
+
+        }
+
+    }while(choice != 6);
+
+  
 
 
     return 0;
