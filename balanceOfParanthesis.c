@@ -3,8 +3,11 @@
 #include <string.h>
 
 int main() {
+    
     char expression[100];  // Array to store the expression
+    
     int top = -1;  // Stack pointer
+    
     char stack[100];  // Stack to store opening parentheses
     
     // Take input from the user
@@ -22,14 +25,18 @@ int main() {
         if (ch == '(' || ch == '{' || ch == '[') {
             stack[++top] = ch;
         } 
+            
         // If the character is a closing bracket
         else if (ch == ')' || ch == '}' || ch == ']') {
+            
             // If stack is empty or the top of the stack doesn't match the closing bracket
             if (top == -1) {
                 printf("Unbalanced\n");
                 return 0;  // Exit early as the expression is unbalanced
             }
+            
             char top_element = stack[top--];
+            
             // Check for matching opening bracket
             if ((ch == ')' && top_element != '(') || 
                 (ch == '}' && top_element != '{') || 
